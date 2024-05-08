@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:orientation="vertical"
+        android:layout_marginTop="220dp">
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/textID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:textColor="#060053"
+            android:textSize="15dp"
+            android:textColorHint="#dddddd"
+            android:hint="학번을 입력해주세요."/>
+        <EditText
+            android:id="@+id/textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#060053"
+            android:textSize="15dp"
+            android:textColorHint="#dddddd"
+            android:hint="비밀번호를 입력해주세요."
+            android:inputType="textPassword"/>
+        <android.widget.Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_radius"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+</LinearLayout>
