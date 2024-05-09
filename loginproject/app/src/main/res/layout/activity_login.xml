@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/successSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+        <ImageView
+            android:id="@+id/loginImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gmarket_medium"
+                android:text="명지대학교 통합검색 시스템"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textFontWeight="900"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:privateImeOptions="defau"
+                android:fontFamily="@font/gmarket_medium"
+                android:textColor="#060053"
+                android:textSize="18dp"
+                android:textColorHint="#dddddd"
+                android:hint="검색어를 입력해주세요."
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
